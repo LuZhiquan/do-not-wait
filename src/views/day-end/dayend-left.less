@@ -1,0 +1,67 @@
+.datend-title {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  background: url(../../assets/images/nav_bg.png);
+  background-size: cover;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  .icon-order_btn_back {
+    position: absolute;
+    left: 30px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
+#datend-index {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 46px;
+  background: #eeeeee;
+  border-top: 1px solid #cacaca;
+  .shift-left {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
+    a {
+      width: 100%;
+      height: 62px;
+      line-height: 62px;
+      font-size: 18px;
+      color: #666666;
+      text-align: center;
+      text-decoration: none;
+      position: relative;
+    }
+    .select {
+      background: #eee;
+      color: #8e729d;
+    }
+    .select:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 62px;
+      width: 4px;
+      background: #8e729d;
+    }
+  }
+  .shift-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    right: 0;
+    background-color: #eeeeee;
+  }
+}

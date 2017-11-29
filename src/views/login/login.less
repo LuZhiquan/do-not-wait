@@ -1,0 +1,182 @@
+#root{height: 100%;}
+.login-popup-modal{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: PingFangSC-Regular;
+    background: url(../../assets/images/denglu_background.png);
+    background-size: cover;
+    height: 100%;
+    align-items: center;
+    #account-num{
+        border-radius: 4px 4px 0 0;
+    }
+
+    .login-card{
+        height: 270px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10);
+        border-radius: 4px;
+        width: 510px;
+        display: flex;
+        flex-direction: column;
+        .content{
+            display: flex;
+            flex: 1;
+            padding:60px 0 0 40px;
+        }
+        .btns{
+            display: flex;
+            div{
+                width: 50%;
+                text-align: center;
+                height: 66px;
+                line-height: 66px;
+                font-size: 22px;
+                color: #8E729D;
+                cursor: pointer;
+            }
+             div:nth-child(1){
+               border-top: 1px solid #cacaca;
+            }
+            div:nth-child(2){
+                background: #8E729D;
+                color: #fff;
+            }
+        }
+        .card-input{
+            border: 1px solid #CACACA;
+            border-radius: 4px;
+            width: 340px;
+            height: 70px;
+            outline: none;
+            padding-left: 10px;
+            font-size: 24px;
+            color: #666;
+            margin-left: 10px;
+
+            &:focus{
+                border-color: #8E729D;
+            }
+
+        }
+        .ca-title{
+            line-height: 70px;
+            font-size: 22px;
+            color: #666666;
+        }
+    }
+    .login-title{
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    .center{
+        position: absolute;
+        top:100px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+    }
+    .login-content{
+        width: 510px;
+        height: 633px;
+        margin: 99px auto;
+        border-radius: 4px;
+    }
+    #login{
+        width: 100%;
+        position: relative;
+        input{
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 30px;
+            height: 60px;
+            border: none;
+            border-bottom: 1px solid #CACACA;
+            font-size: 18px;
+        }
+        .warning{
+            width: 100%;
+            position: absolute;
+            top:0;
+            opacity: 0.9;
+            background: #FFE6E6;
+            font-size: 16px;
+            color: #F65757;
+            width: 510px;
+            height: 40px;
+            margin: 0;
+            border-radius: inherit;
+            i{
+                color: #F65757;
+            }
+        }
+    }
+    #num-key{
+        margin-top: -1px;
+        ul{
+            height: 364px;
+            background: #fff;
+            border-radius: 0 0 6px 4px;
+            li{
+                width: 25%;
+                float: left;
+                height: 91px;
+                box-sizing: border-box;
+                border-top: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                font-size: 40px;
+                color: #666666;
+                text-align: center;
+                line-height: 91px;
+                cursor: pointer;
+            }
+            
+            .back,.clear-all,.cancel{
+                font-size: 24px;
+            }
+            .confirm{
+                font-size: 24px; 
+                background: #8E729D;
+                color: #fff; 
+                line-height: 91px;
+                height: 91px;
+                border-radius: 0 0 4px 0;
+            }
+            li:nth-child(4n+4),li:last-child{
+                 border-right: none;
+            }
+            
+            li.zero{
+                width: 50%;
+                 border-right: 1px solid #ccc;
+                 border-radius: 0 0 0 4px;
+            }
+        }
+    }
+}
+
+
+
+
+.accredit-popup-modal input{outline: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+.accredit-popup-modal #accredit .ant-message-notice-content{
+    opacity: 0.9;
+    background: #FFE6E6;
+    font-size: 16px;
+    color: #F65757;
+}
+
+

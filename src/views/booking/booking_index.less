@@ -1,0 +1,126 @@
+#booking_index {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 121px;
+  border-top: 1px solid #cacaca;
+  .date-block {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    .search-btn {
+      cursor: pointer;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      color: #666;
+      font-size: 18px;
+      color: #8e729d;
+
+      i {
+        color: #8e729d;
+        font-size: 20px;
+        margin: 8px;
+      }
+    }
+    .calendar-btn {
+      cursor: pointer;
+      font-size: 18px;
+      color: #8e729d;
+      line-height: 50px;
+      text-align: center;
+      i {
+        color: #8e729d;
+        font-size: 20px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .booking-list-block {
+    width: 590px;
+    background: #eee;
+    padding: 16px 20px 6px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #666666;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 140px;
+    .list-title {
+      display: flex;
+
+      background: #f5f5f5;
+      width: 550px;
+      height: 40px;
+      border: 1px solid #cacaca;
+      border-radius: 4px 4px 0 0;
+      line-height: 40px;
+      li {
+        width: 16.5%;
+        text-align: center;
+      }
+    }
+
+    .list-content {
+      flex: 1;
+      border: 1px solid #cacaca;
+      border-top: none;
+      background: #fff;
+      .item {
+        display: flex;
+        cursor: pointer;
+        width: 548px;
+        height: 53px;
+        border-bottom: 1px solid #cacaca;
+        line-height: 53px;
+        span {
+          width: 16.5%;
+          text-align: center;
+        }
+        span:nth-child(2) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        span:nth-child(5) {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .item.select {
+        background: #f4ebfb;
+      }
+    }
+
+    .create-btn {
+      margin-top: 16px;
+      width: 548px;
+      height: 44px;
+      background: #8e729d;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 44px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .dishes-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 730px;
+    right: 0;
+    border-left: 1px solid #cacaca;
+  }
+}

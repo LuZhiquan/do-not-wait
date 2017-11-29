@@ -1,0 +1,183 @@
+#desk_list_block {
+  height: 100%;
+  background: #fff;
+  .ant-tabs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .ant-tabs-bar {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .ant-tabs-nav-container {
+    margin-bottom: 0;
+  }
+
+  .ant-tabs-vertical .ant-tabs-nav {
+    margin-left: 0;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    color: #666;
+    font-size: 18px;
+    line-height: 40px;
+    height: 50px;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    color: #8e729d;
+  }
+  .ant-tabs-nav .ant-tabs-tab:hover {
+    color: #8e729d;
+  }
+  .ant-tabs-ink-bar {
+    background: #8e729d;
+  }
+  .ant-tabs-tab-prev {
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 34px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .ant-tabs-tab-next {
+    margin-top: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 34px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .ant-tabs-tab-prev-icon:before,
+  .ant-tabs-tab-next-icon:before {
+    font-size: 20px;
+  }
+  .ant-tabs-content {
+    flex: 1;
+  }
+
+  .desk-block {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px 15px 0;
+  }
+  .desk-item {
+    position: relative;
+    flex: 1 1 136px;
+    height: 90px;
+    margin: 15px 0 0 15px;
+    overflow: hidden;
+    background: #8e729d;
+    border: 1px solid #6d527b;
+    border-radius: 4px;
+    &:empty {
+      height: 0;
+      margin-top: 0;
+      border: none;
+    }
+    .title {
+      height: 60px;
+      padding: 6px 0 0px 10px;
+      text-align: left;
+
+      &::before {
+        display: none;
+        content: '已预订';
+        font-size: 12px;
+        font-weight: 300;
+        color: #ffffff;
+        background: rgba(0, 0, 0, 0.4);
+        width: 70px;
+        height: 30px;
+        transform: rotate(28deg);
+        transform-origin: right 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 47px;
+        text-align: center;
+        padding-left: 8px;
+      }
+      &.booked::before {
+        display: block;
+      }
+      .big {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 28px;
+        padding-right: 28px;
+      }
+      .small {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 14px;
+        padding-right: 28px;
+      }
+      div {
+        display: flex;
+        font-size: 16px;
+        color: #ffffff;
+        line-height: 20px;
+        justify-content: flex-start;
+        margin-top: 4px;
+        .overtime {
+          position: relative;
+          top: 2px;
+          display: block;
+
+          height: 18px;
+          background: #f65757;
+          border-radius: 4px;
+          font-size: 10px;
+          color: #ffffff;
+          line-height: 18px;
+          text-align: center;
+        }
+        .leave {
+          text-align: center;
+          position: relative;
+          top: 2px;
+          display: block;
+          height: 18px;
+          background: #28afff;
+          border-radius: 4px;
+          font-size: 10px;
+          color: #ffffff;
+          line-height: 18px;
+        }
+        span:nth-child(2) {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .content {
+      border-radius: 0 0 4px 4px;
+      height: 28px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 8px;
+      font-size: 16px;
+      color: #8e729d;
+      line-height: 28px;
+      span:nth-child(1) {
+        width: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}

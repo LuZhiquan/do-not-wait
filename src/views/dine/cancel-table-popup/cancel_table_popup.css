@@ -1,0 +1,88 @@
+.cancel-table-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel-table-popup-modal .ant-modal-body .ant-tabs-nav-container {
+  display: flex;
+  align-content: center;
+}
+.cancel-table-popup-modal .ant-modal {
+  top: 0;
+}
+.cancel-table-popup-modal .select-items {
+  margin-top: 10px;
+  width: 800px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #cacaca;
+}
+.cancel-table-popup-modal .select-header {
+  line-height: 30px;
+  border-bottom: 1px solid #cacaca;
+  font-size: 14px;
+  color: #383838;
+}
+
+.cancel-table-popup-modal .cancel-table-reason-block {
+  background: #eeeeee;
+  padding: 10px 20px 30px 20px;
+  position: relative;
+}
+
+.cancel-table-popup-modal .cancel-table-reason-block .select-header {
+  line-height: 30px;
+  text-align: center;
+}
+.cancel-table-popup-modal .cancel-table-reason-block .cause-btns {
+  margin-top: 20px;
+  width: 240px;
+  line-height: 38px;
+  font-size: 18px;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  background: #fff;
+  margin-right: 20px;
+}
+.cancel-table-popup-modal .cancel-table-reason-block .cause-btns:nth-child(3n) {
+  margin-right: 0px;
+}
+.cancel-table-popup-modal .cancel-table-reason-block .btn-active {
+  background: #e8d9f0;
+  border: 1px solid #8e729d;
+  color: #8d6da0;
+}
+.cancel-table-popup-modal .cancel-table-reason-block .cursor-input {
+  margin-top: 10px;
+  width: 800px;
+  height: 120px;
+  font-size: 14px;
+  color: #666;
+  outline: none;
+  border: 1px solid #cacaca;
+  resize: none;
+  padding: 10px;
+}
+
+.cancel-table-popup-modal .cancel-table-reason-block .ant-alert {
+  border-radius: 4px 4px 0 0;
+  opacity: 0.9;
+  background: #ffe6e6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: left;
+  color: #f65757;
+  font-size: 14px;
+  height: 32px;
+}
+.cancel-table-popup-modal .cancel-table-reason-block .ant-alert i {
+  color: #f65757;
+}

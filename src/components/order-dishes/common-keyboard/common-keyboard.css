@@ -1,0 +1,53 @@
+
+.my-keyboard{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 24px 0 46px 0px;
+    border: none;
+}
+
+.my-keyboard .cheng-btns{
+    width: 512px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.my-keyboard .cheng-btns input:nth-child(10){
+    padding-bottom: 14px;
+    font-weight: 700;
+}
+.my-keyboard .btn-item{
+    box-sizing: border-box;
+    width: 170px;
+    height: 70px;
+    background: #FFF;
+    outline: none;
+    border: none;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc; 
+    font-size: 24px;
+    color: #666666;
+    cursor: pointer;
+}
+.my-keyboard .btn-item:active{
+    background: #EADCF1;
+}
+.my-keyboard .btn-back{
+    width: 170px;
+    height: 70px;
+    background: #FFF;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;  
+    line-height: 70px;
+    cursor: pointer;
+}
+.my-keyboard .btn-back:active{
+     background: #EADCF1;
+}

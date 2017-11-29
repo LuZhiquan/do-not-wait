@@ -1,0 +1,217 @@
+.taocan-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taocan-popup-modal .ant-modal {
+  top: 0;
+}
+
+.taocan-popup-modal .common-block .kong-block {
+  width: 64px;
+  height: 64px;
+  margin-left: 360px;
+  position: relative;
+  top: 20px;
+}
+.taocan-popup-modal .common-block .kong-block i {
+  font-size: 64px;
+  line-height: 64px;
+  color: #bebebe;
+}
+
+.taocan-popup-modal .common-block .ant-alert {
+  border-radius: 4px 4px 0 0;
+  opacity: 0.9;
+  background: #ffe6e6;
+  position: absolute;
+  top: 10px;
+  left: 21px;
+  z-index: 10;
+  width: 798px;
+  text-align: left;
+  color: #f65757;
+  font-size: 14px;
+  height: 32px;
+}
+.taocan-popup-modal .common-block .ant-alert i {
+  color: #f65757;
+}
+
+.taocan-popup-modal .common-block .select-items .all-items-right {
+  width: 798px;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item {
+  width: 780px;
+  position: relative;
+  margin-top: 10px;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item:nth-child(2n) {
+  margin-right: 0;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item i {
+  position: absolute;
+  right: -30px;
+  top: 4px;
+  color: #f65757;
+  font-size: 20px;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item .tao-remarks {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  padding: 0 10px 6px 30px;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item .tao-title {
+  display: table;
+  font-size: 12px;
+  color: #ffffff;
+  height: 20px;
+  border-radius: 10px;
+  background: #8e729d;
+  padding: 0 10px;
+  line-height: 20px;
+}
+
+.taocan-popup-modal .common-block .tao-can-selected-item .tao-content-lis {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.taocan-popup-modal .common-block .tao-can-selected-item .tao-content {
+  width: 320px;
+  border: 1px solid #cacaca;
+  line-height: 30px;
+  margin-top: 6px;
+  border-radius: 4px;
+  position: relative;
+}
+.taocan-popup-modal
+  .common-block
+  .tao-can-selected-item
+  .tao-content:nth-child(2n) {
+  margin-left: 80px;
+}
+.taocan-popup-modal .common-block .tao-content .tao-title-line {
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+  font-size: 14px;
+}
+.taocan-popup-modal .common-block .tao-title-line .tao-index {
+  flex: 1;
+}
+.taocan-popup-modal .common-block .tao-title-line .tao-name {
+  flex: 6;
+  text-align: left;
+}
+.taocan-popup-modal .common-block .tao-title-line .tao-count {
+  flex: 2;
+}
+.taocan-popup-modal .common-block .tao-title-line .tao-price {
+  flex: 2;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.taocan-popup-modal .common-block .taocan-item {
+  width: 147px;
+  height: 86px;
+  background: #8e729d;
+  border: 1px solid #775a87;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+
+.taocan-popup-modal .common-block .item-number {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background: #f65757;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}
+.taocan-popup-modal .common-block .taocan-item:before {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  content: '';
+  width: 145px;
+  height: 84px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.taocan-popup-modal .common-block .taocan-item:after {
+  display: none;
+  content: '\e656';
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  right: -1px;
+  top: -9px;
+}
+.taocan-popup-modal .common-block .select.taocan-item:after {
+  display: block;
+}
+.taocan-popup-modal .common-block .mask.taocan-item:before {
+  display: block;
+}
+
+.taocan-popup-modal .common-block .taocan-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.taocan-popup-modal .common-block .item-header {
+  line-height: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  height: 54px;
+  width: 100%;
+  text-align: center;
+  padding: 6px 10px 0 10px;
+  box-sizing: border-box;
+}
+.taocan-popup-modal .common-block .item-price {
+  height: 30px;
+  width: 100%;
+  background: #fff;
+  font-size: 16px;
+  color: #8e729d;
+  border-radius: 0 0 4px 4px;
+}
+
+.taocan-popup-modal .common-block {
+  width: 100%;
+  height: 500px;
+  box-sizing: border-box;
+  text-align: center;
+  background: #eee;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.taocan-popup-modal .common-block .select-items {
+  margin-top: 10px;
+  width: 800px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #cacaca;
+}
+
+.taocan-popup-modal .common-block .select-header {
+  line-height: 30px;
+  border-bottom: 1px solid #cacaca;
+  font-size: 14px;
+  color: #383838;
+}

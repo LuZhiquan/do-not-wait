@@ -1,0 +1,87 @@
+.open-class-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-modal {
+    top: 0;
+  }
+
+  #login {
+    width: 100%;
+    position: relative;
+    height: 90px;
+    padding: 17px 20px 19px 20px;
+    span {
+      font-size: 22px;
+      color: #666666;
+      margin-left: 20px;
+      display: inline-block;
+    }
+    ::-webkit-input-placeholder {
+      color: #9b9b9b;
+    }
+    input[type='text']:focus {
+      border: 1px solid #8e729d;
+    }
+    input {
+      background: #ffffff;
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      width: 427px;
+      height: 54px;
+      outline: none;
+      font-size: 18px;
+      color: #666666;
+      padding-left: 10px;
+    }
+  }
+  #num-key {
+    padding-top: 10px;
+    background: #eee;
+    ul {
+      height: 364px;
+      background: #fff;
+      li {
+        width: 25%;
+        float: left;
+        height: 91px;
+        box-sizing: border-box;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        font-size: 40px;
+        color: #666666;
+        text-align: center;
+        line-height: 91px;
+        cursor: pointer;
+      }
+      li:active {
+        background: #eadcf1;
+      }
+      .okbutton {
+        background: #8e729d;
+        font-size: 24px;
+        color: #ffffff;
+        height: 182px;
+        line-height: 182px;
+        float: right;
+      }
+      .back,
+      .clear-all,
+      .cancle,
+      .use-card {
+        font-size: 24px;
+      }
+      .confirm {
+        font-size: 24px;
+        background: #8e729d;
+        color: #fff;
+      }
+      li:nth-child(4n + 4) {
+        border-right: none;
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.receipt-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content:center .ant-modal {
+    top: 0;
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+}
+
+.receipt-container {
+  .receipt-title {
+    padding: 15px 20px 0;
+    font-size: 24px;
+    color: #383838;
+    line-height: 24px;
+    text-align: center;
+  }
+  .receipt-info {
+    padding: 0 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 28px;
+      width: 50%;
+      font-size: 16px;
+      color: #1a1a1a;
+      .re-title {
+        font-size: 16px;
+        color: #b7b7b7;
+      }
+    }
+    li:nth-child(2n) {
+      padding-left: 30px;
+    }
+  }
+  .receipt-payment {
+    padding: 10px 40px 0;
+    margin-top: 10px;
+    border-top: 1px dashed #cacaca;
+    display: flex;
+    .payment {
+      width: 50%;
+      display: flex;
+      font-size: 16px;
+      color: #383838;
+      span {
+        color: #b7b7b7;
+      }
+    }
+    .money {
+      width: 50%;
+      padding-left: 30px;
+      display: flex;
+      font-size: 16px;
+      color: #383838;
+      span {
+        color: #b7b7b7;
+      }
+    }
+  }
+  .receipt-remarks {
+    width: 100%;
+    padding: 10px 40px 0;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px dashed #cacaca;
+    font-size: 16px;
+    color: #1a1a1a;
+    line-height: 28px;
+    .remarks {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 450px;
+    }
+    .re-title {
+      font-size: 16px;
+      color: #b7b7b7;
+    }
+    .person {
+      display: flex;
+      justify-content: space-between;
+      line-height: 28px;
+    }
+  }
+  .receipt-address {
+    padding: 10px 40px 0;
+    margin-top: 10px;
+    border-top: 1px dashed #cacaca;
+    font-size: 16px;
+    color: #1a1a1a;
+    line-height: 28px;
+    .re-title {
+      font-size: 16px;
+      color: #b7b7b7;
+    }
+  }
+  .receipt-notice {
+    padding: 0 40px;
+    font-size: 16px;
+    color: #f65757;
+    margin-top: 20px;
+  }
+  .confirm-btn {
+    cursor: pointer;
+    margin-top: 40px;
+    background: #8e729d;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+  }
+}

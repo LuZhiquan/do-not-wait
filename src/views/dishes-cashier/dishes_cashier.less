@@ -1,0 +1,191 @@
+/** 快餐收银 **/
+.dishes-list .dishes-memo {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #666;
+  background-color: #F5F5F5;
+}
+.dishes-list .dishes-memo .dishes-memo-title {
+  color: #666;
+}
+.dishes-list .dishes-memo .dishes-memo-title .link-btn {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  color: #9B9B9B;
+  font-weight: normal;
+  cursor: pointer;
+}
+.dishes-list .dishes-memo .dishes-demo-cont {
+  margin-top: 10px;
+}
+
+.dishes-memo-popup-bg {
+  padding: 10px;
+  background-color: #EEEEEE;
+}
+.dishes-demo-textarea {
+  width: 580px;
+  height: 310px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+}
+
+.dishes-cashier-footer {
+  padding: 20px 16px;
+}
+.dishes-cashier-footer .btn-hollow {
+  float: left;
+  width: 72px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  color: #8E729D;
+  text-align: center;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #8E729D;
+}
+.dishes-cashier-footer .dishes-type {
+  float: right;
+  font-size: 18px;
+  color: #8E729D;
+  border-radius: 4px;
+  background: #FBF1FF;
+  border: 1px solid #8E729D;
+}
+.dishes-cashier-footer .dishes-type-cell {
+  display: inline-block;
+  width: 158px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.dishes-cashier-footer .dishes-type-cell.active {
+  color: #FFF;
+  border-radius: 4px;
+  background: #8E729D;
+}
+
+.dishes-preview .dishes-guide{
+  padding: 30px 16px 0;
+  font-size: 18px;
+  color: #8E729D;
+  font-weight: normal;
+  text-align: center;
+}
+.dishes-preview .dishes-guide .icon-tishi {
+  margin-right: 8px;
+}
+
+.dishes-list .dishes-member {
+  margin-top: 96px;
+  text-align: center;
+}
+.dishes-list .dishes-member .icon-kuaicanshouyin_huiyu {
+  font-size: 114px;
+  color: #8E729D;
+}
+.dishes-list .dishes-member .dishes-member-btn {
+  width: 120px;
+  height: 44px;
+  margin: 0 15px;
+  font-size: 18px;
+  color: #8E729D;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #FFFFFF;
+  border: 1px solid #8E729D;
+}
+.dishes-list .dishes-member .dishes-member-btn .iconfont {
+  margin-right: 8px;
+}
+
+#dishes_con_right .payment-bar {
+  display: flex;
+  height: 110px;
+  padding: 10px 15px;
+  background-color: #FFF;
+  border-top: 1px solid #CACACA;
+}
+#dishes_con_right .payment-cell {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #FFF; 
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid;
+  cursor: pointer;
+  overflow: hidden;
+}
+#dishes_con_right .payment-cell:before {
+  position: absolute;
+  top: -180px;;
+  left: 50%;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  content: '';
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, .2);
+}
+#dishes_con_right .payment-cell.wechat {
+  background-color: #00B700;
+  border-color: #159A15;
+}
+#dishes_con_right .payment-cell.alipay {
+  background-color: #25ABEE;
+  border-color: #2189BE;
+}
+#dishes_con_right .payment-cell.member-card {
+  background-color: #FF9A00;
+  border-color:  #C37500;
+}
+#dishes_con_right .payment-cell.bank-card {
+  background-color: #6A8EE1;
+  border-color: #4975CE;
+}
+#dishes_con_right .payment-cell.k-currency,
+#dishes_con_right .payment-cell.other {
+  background-color: #8E729D;
+  border-color:  #775A87;
+}
+#dishes_con_right .payment-cell.hide-cash {
+  display: none;
+}
+#dishes_con_right .payment-cell.more {
+  color: #8E729D; 
+  background-color: #FFF;
+  border-color:  #8E729D;
+}
+#dishes_con_right .payment-cell .payment-name{
+  font-size: 14px;
+  color: #FFF;
+  font-weight: normal;
+}
+#dishes_con_right .payment-cell .iconfont {
+  margin-right: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+#dishes_con_right .payment-cell .payment-name .iconfont {
+  margin-right: 10px;
+  font-size: 25px;
+  vertical-align: middle;
+}
+#dishes_con_right .payment-cell .payment-price {
+  font-size: 14px;
+}
+#dishes_con_right .payment-cell .payment-price strong {
+  font-size: 28px;
+  font-weight: normal;
+}

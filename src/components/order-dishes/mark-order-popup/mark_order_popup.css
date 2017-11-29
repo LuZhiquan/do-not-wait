@@ -1,0 +1,65 @@
+.mark-order-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark-order-modal  .ant-modal {
+  top: 0;
+}
+
+.mark-order-modal .ant-modal-body {
+	position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark-order-modal .ant-alert.ant-alert-warning.ant-alert-banner {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.mark-order-modal .mark-order-block {
+	height:450px
+}
+.mark-order-modal .mark-order-block .mark-order-title {
+	position: relative;
+	width:800px;
+	height:60px;
+	background:#FFFFFF;
+	border:1px solid #CACACA;
+	border-radius:4px;
+	display:flex;
+	justify-content:space-between;
+	line-height:60px;
+	font-size:18px;
+	padding:0 20px;
+	box-sizing:border-box;
+	margin-top:20px;
+	margin-left:20px
+}
+.mark-order-modal .mark-order-block .mark-order-title .mark-order-right i {
+	font-size:18px;
+	color:#F65757;
+	padding:0 6px;
+	font-style:normal
+}
+.mark-order-modal .mark-order-block .mark-order-title .mark-order-right {
+	position: absolute;
+	right: 20px;
+	top: 0;
+}
+.mark-order-modal .mark-order-block .mark-order-title .mark-order-right input {
+	display:inline-block;
+	border:1px solid #6E567C;
+	border-radius:4px;
+	width:90px;
+	height:40px;
+	margin:0 6px;
+	padding:0 4px;
+	text-align:center
+}

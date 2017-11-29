@@ -1,0 +1,100 @@
+.settlement-layer {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 2px;
+    background-color: #FFF;
+    transition: .2s ease-in-out;
+    transform: translateX(100%);
+    .layer-title{
+        height: 72px;
+        font-size: 32px;
+        color: #383838;
+        line-height: 72px;
+        border-bottom: 1px solid #CACACA;
+        margin: 0 10px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        button{
+            background: #8E729D;
+            border: 1px solid #8E729D;
+            border-radius: 4px;
+            width: 120px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            color: #FFFFFF;
+            margin-top: 14px;
+            outline: none;
+            cursor:pointer;
+            i{font-size: 14px;}
+        }
+    }
+    .amount-line{
+        height: 93px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 40px;
+        justify-content: space-between;
+        li{text-align: center;}
+        .f18{font-size: 18px;}
+        .f30{font-size: 30px;}
+        .deep-gray{color: #666;}
+        .light-gray{color: #9B9B9B;}
+        .red{color: #F65757;}
+        .fb{font-weight: bold;}
+    }
+    .layer-center{
+        position: absolute;
+        right: 40px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        left: 40px;
+        bottom: 140px;
+        top: 168px;
+        align-items: center;
+        .center-right{
+            height: 366px;
+            width: 80px;
+            text-align: center;
+            font-size: 14px;
+            color: #8E729D;
+            li{
+                border: 1px solid #8E729D;
+                border-radius: 4px;
+                height: 65px;
+                width: 80px;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                cursor:pointer;
+                i{
+                    display: block;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .pay-methods{
+        position: absolute;
+        left: 40px;
+        display: flex;
+        justify-content: space-between;
+        right: 40px;
+        bottom: 40px;
+        .hide-cash{
+            display: none;
+        }
+        .payment-frame{
+            margin-right: 20px;
+            margin-left: 0;
+        }
+    }
+}
+.settlement-layer.show {
+    transform: translateX(0);
+}

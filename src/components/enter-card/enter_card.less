@@ -1,0 +1,58 @@
+
+.enter-card{
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ant-modal {
+        top: 0;
+    }
+    .price-input{
+        width: 100%;
+        box-sizing: border-box;
+        height: 90px;
+        border: none;
+        font-size: 24px;
+        color: #CACACA;
+        padding-left: 30px;
+    }
+     #num-key{
+        ul{
+            height: 273px;
+            background: #fff;
+            li{
+                width: 20%;
+                float: left;
+                height: 91px;
+                box-sizing: border-box;
+                border-top: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                font-size: 40px;
+                color: #666666;
+                text-align: center;
+                line-height: 91px;
+                cursor: pointer;
+            }
+            .confirm{
+                height: 182px;
+                line-height: 182px;
+                margin-top: -91px;
+            }
+            .active{
+                background: #eee;
+            }
+             .back,.clear-all,.cancle,.use-card{
+                font-size: 24px;
+            }
+            li:nth-child(5n+5),li:last-child{
+                border-right: none;
+            }
+            li:nth-child(4n+4),li:last-child{
+                border-right:1px solid #ccc;
+            }
+        }
+    }
+
+}
+

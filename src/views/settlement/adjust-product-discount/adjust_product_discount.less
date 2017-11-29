@@ -1,0 +1,89 @@
+.adjust-product-discount-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: PingFangSC-Regular;
+    .ant-modal {
+        top: 0;
+    }
+    .ant-modal-body{
+        box-sizing: border-box;
+        height: 510px;
+        background: #EEEEEE;
+        padding: 16px !important;
+    }
+    .discount-content{
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        border-radius: 4px;
+        width: 868px;
+        height: 447px;
+        font-size: 14px;
+
+        .discount-title{
+            height: 30px;
+            line-height: 30px;
+            display: flex;
+            background: #F5F5F5;
+            border-radius: 3px 3px 0 0;
+            color: #9B9B9B;
+            border-bottom: 1px solid #cacaca;
+            li{
+                flex: 1;
+                text-align: center;
+            }
+        }
+        .discount-body{
+            color: #383838;
+            li{
+                height: 50px;
+                line-height: 50px;
+                display: flex;
+                border-bottom: 1px solid #cacaca;
+                span{
+                    flex: 1;
+                    text-align: center;
+                    .discount{
+                        background: #FFFFFF;
+                        border: 1px solid #CACACA;
+                        border-radius: 4px;
+                        width: 60px;
+                        height: 38px;
+                        text-align: center
+                    }
+                     .discount-amount{
+                        background: #FFFFFF;
+                        border: 1px solid #CACACA;
+                        border-radius: 4px;
+                        width: 71px;
+                        height: 38px;
+                        text-align: center;
+                    }
+                }
+                .recover-discount{
+                    color: #8E729D;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .bottom-detail{
+        color: #666666;
+        margin-top: 15px;
+        span{
+            margin-right: 50px;
+            i{
+                color: #003000;
+                font-style: normal;
+            }
+        }
+        span.balance{
+            i{
+                color: red;
+            }
+        }
+    }
+
+}
+
+

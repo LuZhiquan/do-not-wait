@@ -1,0 +1,331 @@
+.order-details-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-modal {
+    top: 0;
+  }
+
+  .banquet-order-details-main {
+    width: 100%;
+    height: 510px;
+    padding: 10px 20px 20px 20px;
+    background: #eeeeee;
+    .order-details-left {
+      width: 420px;
+      height: 480px;
+      background: #ffffff;
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 20px;
+      .order-details-left-main {
+        width: 100%;
+        height: 100%;
+        padding: 16px 20px;
+      }
+      .details-content {
+        display: table;
+        margin-bottom: 7px;
+        span,
+        em {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        span {
+          color: #9b9b9b;
+          text-align: justify;
+          text-align-last: justify;
+          display: inline-block;
+          font-size: 14px;
+        }
+        em {
+          font-size: 14px;
+          color: #383838;
+        }
+        span:nth-of-type(1) {
+          width: 56px;
+          margin-right: 10px;
+        }
+        span:nth-of-type(2) {
+          width: 56px;
+          margin-right: 10px;
+        }
+        em:nth-of-type(1) {
+          width: 131px;
+        }
+        em:nth-of-type(2) {
+          width: 93px;
+        }
+      }
+
+      .order-classification {
+        width: 100%;
+        p {
+          font-size: 14px;
+          color: #8e729d;
+          position: relative;
+          padding-left: 10px;
+          margin-bottom: 10px;
+        }
+        p:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 17px;
+          width: 4px;
+          background: #8e729d;
+        }
+      }
+      .css-hr {
+        margin: 10px 0;
+        height: 1px;
+        border: none;
+        border-top: 1px solid #cacaca;
+      }
+      .collection-record {
+        padding-bottom: 20px;
+        p {
+          font-size: 14px;
+          color: #8e729d;
+        }
+        span {
+          font-size: 14px;
+          color: #383838;
+          margin-right: 10px;
+        }
+      }
+    }
+    .order-details-right {
+      width: 420px;
+      height: 480px;
+      background: #ffffff;
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: top;
+      .my-scroll .all-pagination div:first-child {
+        border-left: 0;
+      }
+      .right-title {
+        background: #f5f5f5;
+        border-radius: 3px 3px 0 0;
+        font-size: 14px;
+        color: #9b9b9b;
+        width: 100%;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #cacaca;
+      }
+      .order-details-right-main {
+        width: 100%;
+        height: 100%;
+        padding: 15px 10px 15px 0;
+      }
+      .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+        line-height: 0;
+        border-bottom: 0;
+      }
+      .ant-collapse
+        > .ant-collapse-item
+        > .ant-collapse-header[aria-expanded='true']
+        .arrow {
+        margin-left: 351px;
+        font-size: 24px;
+      }
+
+      .ant-collapse
+        > .ant-collapse-item
+        > .ant-collapse-header
+        > .show-content {
+        position: absolute;
+        left: 0;
+        width: 90%;
+        height: 100%;
+        em {
+          font-size: 18px;
+          color: #8e729d;
+          position: relative;
+          padding-left: 10px;
+        }
+        em:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 4px;
+          background: #8e729d;
+        }
+        .content-title {
+          width: 100%;
+          line-height: 38px;
+          height: 38px;
+          font-size: 14px;
+          color: #666666;
+
+          em {
+            margin-right: 10px;
+          }
+          span {
+            margin-right: 10px;
+          }
+          span:nth-of-type(3) {
+            margin-right: 0;
+          }
+        }
+      }
+      .ant-collapse-content > .ant-collapse-content-box {
+        // background: #F5F5F5;
+        width: 381px;
+        padding-top: 0;
+      }
+      .ant-collapse-content > .ant-collapse-content-box > .order-submenu {
+        width: 100%;
+        min-height: 50px;
+        border-bottom: 1px dashed #cacaca;
+        background: #f5f5f5;
+      }
+
+      .ant-collapse-content
+        > .ant-collapse-content-box
+        > .order-submenu
+        > .order-main {
+        padding: 10px 0;
+        .order-title {
+          width: 100%;
+          display: table;
+          i {
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #cd62ae;
+            border-radius: 4px;
+            display: inline-block;
+            font-style: normal;
+            text-align: center;
+            margin-right: 5px;
+          }
+          span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 18px;
+            color: #383838;
+          }
+          span:nth-of-type(1) {
+            width: 10%;
+            text-align: center;
+          }
+          span:nth-of-type(2) {
+            width: 70%;
+          }
+          span:nth-of-type(3) {
+            width: 20%;
+          }
+        }
+
+        .order-title-special {
+          width: 100%;
+          display: table;
+          i {
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #cd62ae;
+            border-radius: 4px;
+            display: inline-block;
+            font-style: normal;
+            text-align: center;
+            margin-right: 5px;
+          }
+          span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 18px;
+            color: #383838;
+          }
+          span:nth-of-type(1) {
+            width: 10%;
+            text-align: center;
+          }
+          span:nth-of-type(2) {
+            width: 50%;
+          }
+          span:nth-of-type(3) {
+            width: 20%;
+          }
+          span:nth-of-type(4) {
+            width: 20%;
+          }
+        }
+        p {
+          margin-left: 10%;
+        }
+      }
+      .ant-collapse-content
+        > .ant-collapse-content-box
+        > .order-submenu
+        > .each-order {
+        width: 90%;
+        // height: 54px;
+        margin-left: 10%;
+        padding: 10px 0;
+        border-bottom: 1px dashed #cacaca;
+        .order-p {
+          font-size: 14px;
+          color: #383838;
+          position: relative;
+          width: 100%;
+          span:nth-of-type(2) {
+            position: absolute;
+            right: 18px;
+          }
+        }
+        em {
+          font-size: 12px;
+          color: #9b9b9b;
+          display: block;
+        }
+      }
+      .ant-collapse-content
+        > .ant-collapse-content-box
+        > .order-submenu
+        > .each-order:last-child {
+        border-bottom: 0;
+      }
+      .ant-collapse-borderless > .ant-collapse-item > .ant-collapse-content {
+        border: 0;
+      }
+      .ant-collapse > .ant-collapse-item {
+        border-bottom: 0;
+      }
+      .ant-collapse-borderless
+        > .ant-collapse-item
+        > .ant-collapse-header:hover {
+        background-color: #ffffff;
+      }
+      .ant-collapse > .ant-collapse-item > .ant-collapse-header:active {
+        background-color: #ffffff;
+      }
+      .ant-collapse .ant-collapse-item-disabled > .ant-collapse-header,
+      .ant-collapse
+        .ant-collapse-item-disabled
+        > .ant-collapse-header
+        > .arrow {
+        background-color: #ffffff;
+      }
+    }
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header .arrow {
+    margin-left: 351px;
+    font-size: 24px;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header:active {
+    background-color: #ffffff !important;
+  }
+}

@@ -1,0 +1,244 @@
+#message{
+	width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0px; 
+	.title{
+		height: 46px;
+		line-height: 46px;
+		width: 100%; 
+		background: url(../../assets/images/nav_bg.png);
+		background-size: cover;
+		text-align: center;
+		position: relative;
+		color: #fff; 
+		font-size: 20px;
+		i{
+			position: absolute;
+			left: 30px;
+			line-height: 20px;
+			top: 13px;
+			font-size: 18px;
+			color: #fff;
+		}
+	}
+	.ant-tabs-nav{
+		width: 140px;
+	}
+	.ant-tabs-tab{
+		padding: 0;
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+		color: #9B9B9B;
+		text-align: center;
+		margin-bottom: 0;
+		background: #fff;
+		border-bottom:1px solid rgba(230,234,238,0.5);
+	}
+	.ant-tabs-tab:hover{
+		color: #8E729D;
+	}
+	.ant-tabs-tab-active{
+		color: #8E729D;
+		background: #eee;
+	}
+	.ant-tabs-ink-bar{
+		background: #8E729D;
+		left:0px;
+		width: 5px;
+	}
+	.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-nav-container{
+		padding: 0;
+	}
+	.message-left{
+	position: absolute;
+	bottom: 0;
+	top:46px;
+	width: 100%;
+	display: flex;
+	.ant-tabs-bar{
+		width: 140px;
+		border-right: 1px solid #cacaca;
+		margin-right: 0;
+		overflow: hidden;
+
+	}
+	.ant-tabs-content{
+		flex: 1;
+	}
+
+}
+}
+button,input{
+	outline: none;
+}
+
+.message-right{
+	background: #eee;
+	position: absolute;
+	left: 140px;
+	right:0;
+    bottom: 0;
+	top:0;
+	padding: 0 20px;
+	.message-right-top{
+		height: 60px;
+		padding-top: 10px;
+		display: flex;
+		button{
+			height: 44px;
+			border: 1px solid #8E729D;
+			border-radius: 4px;
+			width: 140px;
+			margin-right: 15px;
+			background: #fff;
+			font-size: 16px;
+			color: #8E729D;
+			cursor: pointer; 
+		}
+		input{
+			background: #FFFFFF;
+			border: 1px solid #B7B7B7;
+			border-radius: 4px;
+			height: 40px;
+			width: 150px;
+			margin-left: 15px;
+			padding-left: 20px;
+			color: #B7B7B7;
+			font-size: 16px;
+		}
+		.message-search{
+			display: flex;
+			flex: 3;
+			position: relative;
+			input{width: 310px;}
+			i{
+				position: absolute;
+				right: 20px;
+				top: 10px;
+				color: #B7B7B7;
+			}
+		}
+		.selected{
+			background: #8E729D;
+			color:#fff;
+		}
+	}
+	.message-right-content{
+		border: 1px solid #CACACA;
+		border-radius: 4px;
+		position: absolute;
+		bottom: 16px;
+		right: 20px;
+		top: 60px;
+		left: 20px;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		.table-head{
+			height: 40px;
+			line-height: 40px;
+			display: table;
+			background: #F5F5F5;
+			border-radius: 4px 4px 0 0;
+			border-bottom: 1px solid #CACACA;;
+			width: 100%;
+			li{
+				font-size: 14px;
+				color: #666666;
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			li:nth-child(1){width: 4.5%;}
+			li:nth-child(2){width: 10.5%;}
+			li:nth-child(3){width: 10.5%;}
+			li:nth-child(4){width: 10.5%;}
+			li:nth-child(5){width: 17.5%;}
+			li:nth-child(6){width: 10.5%;}
+			li:nth-child(7){width: 10.5%;}
+			li:nth-child(8){width: 24.5%;}
+
+			
+		 
+			 
+
+		}
+		.table-body{
+			flex: 1;
+			li{
+				display: table;  
+				border-bottom: 1px solid #CACACA;
+				font-size: 14px;
+				color: #666666;
+				height: 50px;
+				width: 100%;
+				i{
+					font-style: normal;
+				}
+				span{
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center; 
+				}
+				span:nth-child(1){width: 4.5%;}
+				span:nth-child(2){width: 10.5%;}
+				span:nth-child(3){width: 10.5%;}
+				span:nth-child(4){width: 10.5%;}
+				span:nth-child(5){width: 17.5%;}
+				span:nth-child(6){width: 10.5%;}
+				span:nth-child(7){width: 10.5%;}
+				span:nth-child(8){width: 24.5%;text-align: left;}
+				 
+				.spanleft{
+					text-align: left;
+				} 
+			}
+			
+		}
+		.num,.table-num,.time,.status{
+			text-align: center;
+			flex: 1;
+			display: table-cell;
+			vertical-align: middle;
+			word-break: break-all;
+		}
+	
+		.messageType,.processor{
+			text-align: center;
+			flex: 2;
+			display: table-cell;
+			vertical-align: middle;
+			word-break: break-all;
+		}
+		.message-content,.operate{ 
+			flex: 4; 
+			word-break: break-all;
+		}
+		.operate{
+			button{
+				width: 88px;
+				height: 38px;
+				background: #8E729D;
+				border-radius: 4px;
+				font-size: 16px;
+				color: #fff;
+				margin-right: 10px;
+				border: 1px solid #8E729D; 
+				cursor: pointer; 	
+			}
+		}
+		
+	}
+	.message-left-num{
+		height: 20px;
+		background: #F65757;
+		color: #fff;
+		padding: 0 5px;	
+		border-radius: 100px;
+		font-size: 14px;
+	}
+	
+}

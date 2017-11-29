@@ -1,0 +1,66 @@
+.combine-price-popup-modal #combine-price{
+    width:100%;
+    box-sizing: border-box;
+}
+.combine-price-popup-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.combine-price-popup-modal  .ant-modal {
+  top: 0;
+}
+
+.combine-price-popup-modal .price-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #CACACA;
+    font-size: 40px;
+    color: #666;
+    text-align: right;
+}
+
+ #num-key{
+    padding-top: 10px;
+    background: #eee;
+}
+ #num-key ul{
+    height: 364px;
+    background: #fff;
+}
+ #num-key ul li{
+    width: 25%;
+    float: left;
+    height: 91px;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 40px;
+    color: #666666;
+    text-align: center;
+    line-height: 91px;
+    cursor: pointer;
+}
+.combine-price-popup-modal #num-key ul .confirm{
+    height: 182px;
+}
+#num-key ul .active{
+    background: #EADCF1;
+}
+ #num-key ul .back, #num-key ul .clear-all, #num-key ul .cancle, #num-key ul .use-card{
+    font-size: 24px;
+}
+ .combine-price-popup-modal  #num-key ul .confirm{
+    font-size: 24px; 
+    background: #8E729D;
+    color: #fff; 
+    margin-top: -91px;
+    line-height: 182px;
+}
+ #num-key ul li:nth-child(4n+4), #num-key ul li:last-child{
+     border-right: none;
+}

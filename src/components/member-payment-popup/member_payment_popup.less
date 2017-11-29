@@ -1,0 +1,115 @@
+.member-payment-popup {
+    width:100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ant-modal-body {
+        display: flex;
+        background: #eee;
+    }
+    .ant-modal {
+        top: 0;
+    }
+    .left{
+        width: 521px;
+        height: 487px;
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        border-radius: 4px;
+        margin: 10px 20px;
+        .info-name{
+            width: 82px;
+            font-size: 20px;
+            color: #9B9B9B;
+            display: inline-block;
+            text-align-last: justify; 
+            margin-right: 10px;
+            margin-left: 65px;
+        }
+        .info-detail{
+            width: 290px;
+            height: 38px;
+            background: #FFFFFF;
+            border: 1px solid #CACACA;
+            border-radius: 4px;
+            outline: none;
+            padding-left: 12px;
+            font-size: 20px;
+            color: #383838;
+            margin-top: 20px;
+        }
+        .unchange{
+            margin-top: 25px;
+            height: 169px;
+            background: #FFFDEE;
+        }
+    }
+    .right{
+        width: 398px;
+        height: 509px;
+        border-left: 1px solid #CACACA;
+    }
+    .price-input{
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 20px;
+        height: 100px;
+        border: none;
+        font-size: 48px;
+        color: #666;
+        text-align: right;
+    }
+     #num-key{
+        padding-top: 0px;
+        background: #eee;
+    }
+    #num-key ul{
+        height: 409px;
+        background: #fff;
+        li{
+            width: 33.3%;
+            float: left;
+            height: 103px;
+            box-sizing: border-box;
+            border-top: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            font-size: 40px;
+            color: #666666;
+            text-align: center;
+            line-height: 91px;
+            cursor: pointer;
+           
+        }
+        .confirm{
+            height: 182px;
+        }
+        .active{
+            background: #eee;
+        }
+    }
+     #num-key ul li:nth-child(4n+4){
+         border-right: 1px solid #ccc;
+    }
+    #num-key ul  li:last-child{
+        border-right: none;
+    }
+    
+    #num-key ul .back, #num-key ul .clear-all, #num-key ul .cancle, #num-key ul .use-card{
+        font-size: 24px;
+    }
+    .combine-price-popup-modal  #num-key ul .confirm{
+        font-size: 24px; 
+        background: #8E729D;
+        color: #fff; 
+        margin-top: -91px;
+        line-height: 182px;
+    }
+    #num-key ul li:nth-child(3n+3), #num-key ul li:last-child{
+        border-right: none;
+    }
+
+}
+
+
+

@@ -1,0 +1,75 @@
+.cashier {
+  padding: 0 160px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  .pay-amount {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 10px;
+    text-align: center;
+    span {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  }
+  .not-show {
+    display: none;
+  }
+  .cashier-center {
+    position: absolute;
+    bottom: 120px;
+    display: flex;
+    right: 160px;
+    left: 160px;
+    top: 0;
+    align-items: center;
+  }
+  .right-btn {
+    position: absolute;
+    right: 0;
+    height: 366px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    flex-direction: column-reverse;
+    button {
+      border: 1px solid #8e729d;
+      border-radius: 4px;
+      width: 120px;
+      height: 44px;
+      font-size: 18px;
+      color: #8e729d;
+      margin-top: 50px;
+      display: block;
+      background: #fff;
+      cursor: pointer;
+      outline: none;
+      i {
+        margin-right: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+  .payment-method {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 160px;
+    left: 160px;
+    bottom: 40px;
+    .payment-frame {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+    .payment-frame:last-child {
+      margin-right: 0;
+    }
+    .hide-cash {
+      display: none;
+    }
+  }
+}

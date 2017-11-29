@@ -1,0 +1,26 @@
+.choose_meals {
+  height: 285px;
+}
+.choose_meals ul {
+  padding: 40px 30px;
+}
+.meals-list li {
+  height: 36px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 16px;
+  color: #666;
+}
+.meals-list li:last-child {
+  margin-bottom: 0;
+}
+.meals-list li.selected {
+  background: #e8d9f0;
+  border: 1px solid #8e729d;
+  font-size: 16px;
+  color: #8e729d;
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*妗屽彴淇℃伅澶撮儴鏍峰紡*/
+#desk_info_header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: MicrosoftYaHei;
+  font-size: 20px;
+  height: 49px;
+  width: 340px;
+  color: #ffffff;
+  background: #82669C;
+  text-align: center;
+  line-height: 49px; }

@@ -1,0 +1,117 @@
+.cashier-calculate {
+  width: 480px;
+  height: 366px;
+  box-sizing: border-box;
+  border: 1px solid #8e729d;
+  border-radius: 4px;
+  background: #fff;
+  .enter-amount {
+    height: 70px;
+    background: #faf1ff;
+    border-radius: 3px 3px 0 0;
+    font-size: 20px;
+    color: #8e729d;
+    padding: 0 15px;
+    line-height: 70px;
+    border-bottom: 1px solid #8e729d;
+    .price-input {
+      width: 250px;
+      float: right;
+      box-sizing: border-box;
+      height: 70px;
+      border: none;
+      font-size: 30px;
+      text-align: right;
+      background: none;
+    }
+  }
+  .odd-change {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 40px;
+    input {
+      font-size: 26px;
+      float: right;
+      width: 250px;
+      height: 40px;
+      background: none;
+      border: none;
+      text-align: right;
+    }
+  }
+
+  #num-key {
+    padding-top: 0;
+    ul {
+      height: 254px;
+      overflow: hidden;
+      li {
+        width: 25%;
+        float: left;
+        height: 64px;
+        box-sizing: border-box;
+        border-top: 1px solid #8e729d;
+        border-right: 1px solid #8e729d;
+        font-size: 26px;
+        color: #666666;
+        text-align: center;
+        line-height: 64px;
+        cursor: pointer;
+        position: relative;
+        span {
+          font-size: 18px;
+        }
+        p {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+      }
+      .confirm {
+        height: 189px;
+        font-size: 24px;
+        line-height: 189px;
+        background: #8e729d;
+        color: #fff;
+        margin-top: -127px;
+      }
+      .cancel {
+        font-size: 18px;
+      }
+      .active {
+        background: #eee;
+      }
+      .back,
+      .clear-all,
+      .cancle,
+      .use-card {
+        font-size: 24px;
+      }
+      li:nth-child(4n + 4),
+      li:last-child {
+        border-right: none;
+      }
+    }
+  }
+  .pay-amount {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 40px;
+    text-align: center;
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    span {
+      font-size: 30px;
+      margin-left: 20px;
+    }
+  }
+  .not-show {
+    display: none;
+  }
+}

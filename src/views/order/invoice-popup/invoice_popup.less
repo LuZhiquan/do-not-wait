@@ -1,0 +1,77 @@
+.invoice-popup-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ant-modal {
+        top: 0;
+        .ant-modal-body{
+            background: #eee;
+            display: flex;
+            #invoice-message{
+                position: absolute;
+                top: 185px;
+                width: 100%;
+                .ant-message{
+                    position: absolute;
+                    .anticon {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        width: 800px;
+        height: 485px;
+        border: 1px solid #cacaca;
+        border-radius: 4px;
+        background: #fff;
+        margin: 12px 20px;
+        padding: 0 40px;
+        label{
+            width: 80px;
+            margin-right: 12px;
+            font-size: 20px;
+            color: #9B9B9B;
+            display: inline-block;
+            margin-top: 20px;
+            vertical-align: top;
+            position: relative;
+            i{
+                position: absolute;
+                left: -12px;
+                top: 4px;
+                color: red;
+            }
+        }
+        input{
+            height: 40px;
+            width: 625px;
+            border: 1px solid #CACACA;
+            border-radius: 4px;
+            margin-top: 20px;
+            padding-left: 15px;
+            font-size: 20px;
+            color: #383838;
+        }
+        .disable{
+           	cursor: not-allowed; 
+			background: #EDEDED;
+			border: 1px solid #DCDCDC;  
+			font-size: 18px;
+			color: #CACACA;  
+        }
+        textarea{
+            width: 625px;
+            height: 171px;
+            border: 1px solid #CACACA;
+            border-radius: 4px;
+            margin-top: 20px;
+            resize: none;
+            outline: none;
+            padding-left: 15px;
+            font-size: 20px;
+            color: #383838;
+        }
+    }
+}

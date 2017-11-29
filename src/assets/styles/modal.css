@@ -1,0 +1,98 @@
+.ant-modal {
+    position: relative!important; 
+    padding-bottom: 0!important;
+}
+.ant-modal-content {
+    position: relative!important;
+}
+.ant-modal-header {
+    opacity: 0.74!important;
+    background: #825F9F!important;
+    padding: 0!important;
+    height: 46px!important;
+}
+.ant-modal-header 
+.ant-modal-title {
+    font-size: 20px!important;
+    color: #FFFFFF!important;
+    line-height: 46px!important;
+    text-align: center!important;
+}
+.ant-modal-body {
+    padding: 0!important;
+}
+.ant-modal-close {
+    position: absolute!important;
+    top: 0!important; 
+    right: 0!important; 
+    width: 60px!important; 
+    height: 46px!important;
+    line-height: 46px!important; 
+    color: #FFF!important; 
+    text-align: center!important;
+}
+.ant-modal-close-x {
+    width: 100%!important;
+    height: 46px!important;
+    line-height: 46px!important;
+    font-size: 24px!important; 
+}
+.ant-modal-footer {
+    padding: 0!important;
+    display: flex!important;
+}
+.ant-modal-footer button {
+    flex: 1!important; 
+    height: 45px!important;
+    font-size: 18px!important;
+}
+.ant-modal-footer button:first-child {
+    border-bottom-left-radius: 4px!important;
+}
+.ant-modal-footer button:last-child {
+    border-bottom-right-radius: 4px!important;
+}
+/*取消按钮*/
+.ant-modal-footer .no-cancel {
+    color:#8E729D!important;
+}
+/*其他按钮的颜色*/
+.ant-modal-footer .other-botton {
+    background: #8E729D!important;
+    color: #FFFFFF!important;
+    border: 1px solid #70577D!important;
+} 
+.ant-modal-footer .other-botton:hover {
+    border: 1px solid #70577D!important;
+} 
+.ant-modal-footer .other-botton:focus {
+    border: 1px solid #70577D!important;
+} 
+.ant-modal-footer button+button {
+    margin-left: 0 !important;
+}
+.ant-btn-lg {
+    padding: 0!important;
+    border-radius: 0!important;
+}
+
+.ant-btn {
+    color: #8E729D!important;
+}
+.ant-btn:hover, 
+.ant-btn:focus {
+    border-color: #d9d9d9!important; 
+}
+.ant-btn-primary{
+    color: #FFF!important;
+    background-color: #8E729D!important;
+    border-color: #8E729D!important;
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+    border-color: #8E729D!important; 
+}
+
+.ant-modal{
+    top: 0!important;
+}

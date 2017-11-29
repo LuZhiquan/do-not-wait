@@ -1,0 +1,138 @@
+#main_bottom {
+  height: 55px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background: #ffffff;
+}
+#main_bottom #btn {
+  margin: 10px 0 0 0;
+  padding: 0;
+  width: 90%;
+  float: left;
+  display: flex;
+}
+#main_bottom #btn li {
+  flex: 1;
+  height: 32px;
+  border: 1px solid #8e729d;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #8e729d;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#main_bottom #btn li .btn_circle {
+  position: relative;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  transform: translateY(-100%);
+}
+#main_bottom #btn li .btn_white_circle {
+  background: #fff;
+}
+#main_bottom #btn #btn_all {
+  border: 0 none;
+  background: #82669c;
+  color: #fff;
+}
+#main_bottom #btn #btn_all .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_all.btn-active {
+  border: 0 none;
+  background: #69487b;
+  border-radius: 4px;
+}
+#main_bottom #btn #btn_all.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_reverse.btn-active {
+  color: #ffffff;
+  background: #ff8f01;
+  border: none;
+}
+#main_bottom #btn #btn_reverse.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_not_order.btn-active {
+  color: #ffffff;
+  background: #323caa;
+  border: none;
+}
+#main_bottom #btn #btn_not_order.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_has_order.btn-active {
+  color: #ffffff;
+  background: #cc3c46;
+  border: none;
+}
+#main_bottom #btn #btn_has_order.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_zanjie.btn-active {
+  color: #ffffff;
+  background: #019668;
+  border: none;
+}
+#main_bottom #btn #btn_zanjie.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_dirty.btn-active {
+  color: #ffffff;
+  background: #82669c;
+  border: none;
+}
+#main_bottom #btn #btn_dirty.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_free.btn-active {
+  color: #ffffff;
+  background: #448fe5;
+  border: none;
+}
+#main_bottom #btn #btn_free.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #btn #btn_service.btn-active {
+  color: #ffffff;
+  background: #868c98;
+  border: none;
+}
+#main_bottom #btn #btn_service.btn-active .btn_circle {
+  background: #ffffff;
+}
+#main_bottom #leftBot_right {
+  float: left;
+  width: 10%;
+  box-sizing: border-box;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  height: 100%;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #8e729d;
+  padding-top: 6px;
+}
+#main_bottom #leftBot_right .circle {
+  background: #ffffff;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border: 1px solid #82669c;
+}
+#main_bottom #leftBot_right .selected .circle {
+  background: #82669c;
+}

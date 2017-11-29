@@ -1,0 +1,242 @@
+#customer_archive_block {
+  height: 100%;
+
+  .archive-content-block {
+    padding: 20px;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+  }
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 30px;
+    .card-type {
+      font-size: 30px;
+      color: #8e729d;
+    }
+    .name {
+      font-size: 18px;
+      color: #666666;
+      margin-left: 20px;
+    }
+    .iconfont {
+      color: #8e729d;
+      font-size: 14px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  .my-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      text-align: left;
+      font-size: 18px;
+      color: #1a1a1a;
+      .li-title {
+        color: #b7b7b7;
+      }
+    }
+  }
+
+  .number {
+    margin-top: 6px;
+    border-top: 1px dashed #cacaca;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 6px;
+
+    li {
+      height: 60px;
+      position: relative;
+      flex: 1;
+      p {
+        font-size: 24px;
+        color: #8e729d;
+      }
+      div {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+    li::before {
+      position: absolute;
+      left: 0px;
+      top: 12px;
+      display: block;
+      content: '';
+      height: 36px;
+      width: 1px;
+      background: #cacaca;
+    }
+    li:first-child:before {
+      display: none;
+    }
+  }
+  .records {
+    margin-top: 10px;
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    .ant-tabs-nav .ant-tabs-tab {
+      color: #666;
+      font-size: 16px;
+      line-height: 30px;
+      height: 40px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+      color: #8e729d;
+    }
+
+    .list {
+      padding-top: 10px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .records-title {
+      padding: 0 20px;
+      display: flex;
+      font-size: 14px;
+      color: #9f9f9f;
+      line-height: 28px;
+      height: 28px;
+    }
+    .records-content {
+      flex: 1;
+      .con-item {
+        display: flex;
+        border-top: 1px solid #cacaca;
+        font-size: 14px;
+        color: #383838;
+        line-height: 48px;
+        padding: 0 20px;
+      }
+    }
+    .reverse-record {
+      .records-title {
+        li {
+          width: 10%;
+          text-align: center;
+        }
+        li:nth-child(2) {
+          width: 20%;
+        }
+        li:nth-child(5) {
+          width: 15%;
+        }
+        li:nth-child(6) {
+          width: 15%;
+        }
+      }
+      .con-item {
+        span {
+          width: 10%;
+          text-align: center;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        span:nth-child(2) {
+          width: 20%;
+        }
+        span:nth-child(5) {
+          width: 15%;
+        }
+        span:nth-child(6) {
+          width: 15%;
+        }
+      }
+    }
+
+    .consume-record {
+      .records-title {
+        li {
+          width: 8%;
+          text-align: center;
+        }
+        li:nth-child(2) {
+          width: 26%;
+        }
+        li:nth-child(3) {
+          width: 26%;
+        }
+      }
+      .con-item {
+        span {
+          width: 10%;
+          text-align: center;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        span {
+          width: 8%;
+          text-align: center;
+        }
+        span:nth-child(2) {
+          width: 26%;
+        }
+        span:nth-child(3) {
+          width: 26%;
+        }
+      }
+    }
+    .preference-record {
+      .records-title {
+        li {
+          width: 20%;
+          text-align: center;
+        }
+      }
+      .con-item {
+        span {
+          width: 20%;
+          text-align: center;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .consume-taste {
+      .records-title {
+        display: flex;
+        justify-content: space-between;
+      }
+      .con-item {
+        display: flex;
+        justify-content: space-between;
+        span {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    .pagination {
+      height: 40px;
+      border-top: 1px solid #cacaca;
+      display: flex;
+      div {
+        cursor: pointer;
+        width: 50%;
+        font-size: 14px;
+        color: #666666;
+        line-height: 40px;
+        text-align: center;
+      }
+      div:nth-child(1) {
+        border-right: 1px solid #cacaca;
+      }
+    }
+  }
+}

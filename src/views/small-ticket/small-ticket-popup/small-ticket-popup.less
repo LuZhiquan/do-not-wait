@@ -1,0 +1,94 @@
+.small-ticket-popup-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ant-modal {
+        top: 0;
+    }
+    .ant-table-placeholder{
+		display: none;
+	}
+    .small-ticket-main{
+        width: 100%;
+        height: 509px;
+        padding: 0 20px 18px 20px;
+        background: #EEEEEE;
+    }
+    .small-ticket-title{
+        width: 100%;
+        height: 59px;
+        line-height: 59px; 
+        display: flex;
+        span{ 
+            font-size: 18px;
+            color: #666666; 
+            em{
+                font-style: normal;
+                color: #1A1A1A;
+            }
+        }
+        span:nth-child(1){
+            flex: 2.5
+        }
+        span:nth-child(2){
+            flex: 2.5
+        }
+        span:nth-child(3){
+            flex: 5
+        } 
+    }
+
+    .data-list-main{
+        width: 800px;
+        height: 433px;
+        background: #FFFFFF;
+        border: 1px solid #CACACA;
+        border-radius: 4px; 
+        .ant-table-tbody > tr:hover > td {
+            background: #F4EBFB;
+        }
+        .ant-checkbox-input:focus + .ant-checkbox-inner {
+            border-color: #8E729D;
+        }
+        .ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner {
+            background-color: #8E729D;
+            border-color: #8E729D;
+        }
+        .data-title{   
+            height: 40px;  
+            font-size: 16px; 
+            text-align: center;    
+            color: #9B9B9B; 
+
+        }
+        .each-data{  
+            border-bottom:1px solid #CACACA;
+            height: 50px; 
+            width: 100%;  
+            font-size: 16px;
+            color: #383838; 
+            text-align: center;   
+
+        } 
+        .each-data:last-child{  
+            border-bottom: 0;
+        }
+    
+    }
+    
+    .Prompt_button{
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        background: #8E729D; 
+        font-size: 18px;
+        color: #FFFFFF; 
+        text-align: center;
+    }
+
+
+     
+     
+}
+
+

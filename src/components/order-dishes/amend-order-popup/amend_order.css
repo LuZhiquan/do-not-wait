@@ -1,0 +1,115 @@
+.amend-order-popup-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.amend-order-popup-modal  .ant-modal {
+  top: 0;
+}
+
+#amend-order{
+    width: 840px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: left;
+}
+
+.inline-block{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.pull-right {
+    margin-left: 80px;
+}
+#order-num input{
+    color: #1A1A1A;
+    border: none;
+    padding-right:50px;
+    font-size: 18px;
+}
+#person-num input{
+    color: #1A1A1A;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+    width: 118px;
+    margin-top: -5px;
+    margin-right: 10px;
+    height: 38px;
+    text-align: center;
+    font-size: 18px;
+}
+.left-text{
+    width: 72px;
+    height: 38px; 
+    font-size: 18px;
+    color: #666666;
+    text-align:justify ;
+    display:inline-block;
+    text-align: justify;
+    vertical-align:top;
+    margin-right: 10px;
+}
+.left-text::after{
+    content:"";
+    display: inline-block;
+    width:100%;
+    overflow:hidden;
+    height:0;
+}
+.inline-block .icon-home_title_arrow_right {
+    padding-left: 10px;
+    color: #CACACA;
+}
+.table{
+    width: 708px;
+    height: 120px;
+    text-align: center;
+    background: #CACACA;
+    margin-left:78px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #666666;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.table td{
+    background: #fff;
+    cursor: pointer;
+    width: 16.6%;
+    border: 1px solid #CACACA;
+}
+
+.table td:active{
+    background: #EADCF1;
+}
+.table .first-td{
+    border-top-left-radius: 4px;
+}
+.table .back{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.table .second-td{
+    border-bottom-left-radius: 4px;
+}
+#server-name{
+    padding-top: 20px;
+}
+#server-name input{
+    color: #1A1A1A;
+    border: none;
+    width: 70px;
+    padding-right:10px;
+}
+#remark{
+    width: 708px;
+    height:154px;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 5px;
+}

@@ -1,0 +1,126 @@
+.user-defind-popup-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-modal {
+    top: 0;
+  }
+  .ant-modal-body {
+    background: #fff;
+    padding: 10px 20px;
+  }
+  .guige {
+    width: 600px;
+    margin: 20px;
+    background: #ffffff;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    padding: 20px 20px 0 20px;
+  }
+  .list {
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 38px;
+  }
+  .left-name {
+    position: relative;
+    width: 100px;
+    text-align: justify;
+    font-size: 20px;
+    color: #666666;
+    text-align-last: justify;
+    margin-right: 20px;
+    .required-icon {
+      position: absolute;
+      left: -10px;
+      color: #F65757;
+    }
+  }
+  .input-choose {
+    width: 460px;
+    .remarks {
+      width: 100%;
+    }
+    input {
+      width: 200px;
+      height: 38px;
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      flex: 1;
+      padding: 0 10px;
+      &:focus {
+        outline: none;
+        border-color: #9b72be;
+      }
+    }
+    .ant-checkbox-input {
+      width: auto;
+      height: auto;
+    }
+    .ant-select {
+      margin-right: 20px;
+    }
+  }
+}
+
+/******ant-checkbox*******/
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #825f9f;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #825f9f;
+  border-color: #825f9f;
+}
+/******ant-checkbox*******/
+
+/******ant-select*******/
+.ant-select-arrow {
+  margin-top: -8px;
+}
+:root .ant-select-arrow {
+  font-size: 15px;
+}
+.ant-select-selection--single {
+  height: 38px;
+  position: relative;
+  cursor: pointer;
+}
+.ant-select-selection {
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ant-select-selection:hover {
+  border-color: #9b72be;
+}
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+  border-color: #9b72be;
+  outline: 0;
+  box-shadow: 0 0 0 .2px #c191eb;
+}
+
+.ant-select-selection__rendered {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  line-height: 38px;
+}
+.ant-select-dropdown-menu-item {
+  padding: 12px 10px;
+}
+/******ant-select*******/

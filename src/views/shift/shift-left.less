@@ -1,0 +1,53 @@
+#shift-index{
+	position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 121px;
+    background: #EEEEEE;
+    border-top: 1px solid #CACACA; 
+	.shift-left{
+        width: 140px; 
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: #FFFFFF;
+        a{
+            width: 100%;
+            height: 62px;
+            line-height: 62px;  
+            font-size: 18px;
+            color: #666666; 
+            text-align: center;
+            text-decoration:none; 
+            position: relative;
+        }
+        .select{
+            background: #eee;
+            color: #8E729D;
+        }
+        .select:before  { 
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 62px;
+            width: 4px;
+            background: #8E729D; 
+        }
+        
+       
+
+    }
+    .shift-right{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 140px;
+        right: 0; 
+        background-color: #EEEEEE;
+    }
+}

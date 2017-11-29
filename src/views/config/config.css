@@ -1,0 +1,156 @@
+#ipSet {
+  width: 100%;
+  box-sizing: border-box;
+}
+.title {
+  width: 100%;
+  background: #8e729d;
+  font-size: 20px;
+  color: #ffffff;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+}
+.wrap {
+  width: 700px;
+  padding: 0;
+  margin: 120px auto 0;
+}
+.wrap .content {
+  width: 100%;
+  margin-top: 54px;
+  display: flex;
+  font-size: 24px;
+  color: #666666;
+}
+.wrap .content p {
+  width: 85px;
+  line-height: 70px;
+  text-align: left;
+}
+.wrap .content .restaurant-name {
+  width: 100%;
+  line-height: 70px;
+  font-size: 48px;
+  color: #90739f;
+  text-align: center;
+}
+.wrap .content .ip-num,
+#ipSet .content .port-num {
+  width: 610px;
+  text-align: left;
+}
+.wrap .content .ip-num input {
+  width: 115px;
+  height: 70px;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  text-align: center;
+}
+.wrap .content .ip-num span {
+  color: #cacaca;
+  text-align: center;
+  width: 50px;
+  display: inline-block;
+}
+.wrap .content .port-num input {
+  width: 279px;
+  height: 70px;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+#ipSet .only-one-btn {
+  width: 100%;
+  margin: 120px auto 0;
+  border: 1px solid #8e729d;
+  background: #fff;
+  border-radius: 4px;
+  height: 70px;
+  color: #8e729d;
+  font-size: 22px;
+  outline: none;
+  box-sizing: border-box;
+}
+#ipSet .only-one-btn:hover {
+  background: #8e729d;
+  color: #fff;
+}
+
+.two-btn-wrap {
+  width: 100%;
+  margin: 120px 0;
+  text-align: center;
+}
+
+.two-btn {
+  width: 315px;
+  border: 1px solid #8e729d;
+  background: #fff;
+  border-radius: 4px;
+  height: 70px;
+  color: #8e729d;
+  font-size: 22px;
+  outline: none;
+}
+.two-btn:hover,
+.btn-active {
+  background: #8e729d;
+  color: #fff;
+}
+.area-choose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 52px;
+  text-align: center;
+  justify-content: center;
+}
+.myBtn-165-70 {
+  margin: 0 10px 20px;
+  background: #ffffff;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  color: #666666;
+  font-size: 24px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 70px;
+  display: inline-block;
+  cursor: pointer;
+}
+.myBtn-165-70:last-child {
+  margin-right: 0;
+}
+.myBtn-165-70.btn-active {
+  background: #e8d9f0;
+  color: #8e729d;
+  border: 1px solid #8e729d;
+}
+
+#alert-message .ant-message-notice-content {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 470px;
+  height: 90px;
+  line-height: 80px;
+  color: #fff;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+#alert-message .anticon-info-circle {
+  display: none;
+}

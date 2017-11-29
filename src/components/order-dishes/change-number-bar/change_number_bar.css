@@ -1,0 +1,52 @@
+.change-number-bar{
+    min-width: 300px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+	border-radius: 4px;
+}
+.change-number-bar li {
+	line-height: 60px;
+	padding: 0 25px;
+	display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.change-number-bar li:first-child{
+	border-bottom: 1px solid #CACACA;
+}
+.change-number-bar .zhuang-left .red{
+    font-size: 18px;
+    color: #F65757;
+    padding: 0 6px;
+}
+.change-number-bar .zhuang-left{
+    font-size: 18px;
+    color: #666;
+}
+.change-number-bar .zhuang-left .iconfont {
+    margin-right: 24px;
+    font-size: 21px;
+    color: #CACACA;
+    vertical-align: middle;
+}
+.change-number-bar .zhuang-left .iconfont.icon-yes {
+    color: #8E729D;
+}
+.change-number-bar .number{
+    font-size: 20px;
+    color: #8E729D;
+    position: relative;
+}
+
+.change-number-bar .number i{
+   font-size: 24px;
+   color: #9B9B9B;
+   cursor: pointer;
+}
+.change-number-bar .number i:first-child{
+    margin-right: 20px;
+}
+.change-number-bar .number i:last-child{
+    margin-left: 20px;
+}

@@ -1,0 +1,80 @@
+.add-order-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-order-modal .ant-modal {
+  top: 0;
+}
+
+.add-order-modal #prompt{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.add-order-modal .ant-modal-body{
+    box-sizing: border-box;
+    margin: 0 20px;
+    height: 455px;
+}
+.add-order-modal .not-order-product:last-child{
+    padding-right: 30px;
+}
+.add-order-modal .not-order-product h1{
+    font-size: 20px;
+    color: #666666;
+    text-align: center;
+    margin-top:24px;
+}
+.add-order-modal .stop-sale-product li,.out-of-stock li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 14px;
+    color: #868686;
+    padding-top: 10px;
+}
+.add-order-modal .table-title{
+    border-bottom:  1px solid #CACACA;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #868686;
+}
+.add-order-modal .dishes-name,
+.add-order-modal .surplus-num,
+.add-order-modal .ordered-num{
+    display: inline-block;
+    padding-top: 10px;
+}
+.add-order-modal .table-title p{
+    display: inline-block;
+}
+.add-order-modal .table-list p{
+    color: #999999;
+    font-size: 14px;
+}
+.add-order-modal .dishes-name{
+    width: 50%;
+}
+.add-order-modal .surplus-num{
+    width: 25%;
+    text-align: center;
+}
+.add-order-modal .ordered-num{
+    width: 25%;
+    text-align: right;
+}
+
+.add-order-modal .cancel-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #8E729D;
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid #e9e9e9;
+}

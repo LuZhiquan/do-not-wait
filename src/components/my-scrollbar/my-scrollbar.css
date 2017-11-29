@@ -1,0 +1,45 @@
+.my-scroll .all-items-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 0 0 10px 10px;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+}
+.my-scroll{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.my-scroll .all-pagination{
+    height: 38px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.my-scroll .all-pagination div{
+    border-left:1px solid #CACACA; 
+    border-top:1px solid #CACACA; 
+    flex:1;
+    font-size: 14px;
+    color: #9B9B9B;
+    line-height: 38px;
+    cursor: pointer;
+    text-align: center;
+    background: #fff;
+}
+.my-scroll .all-pagination div:nth-child(1){
+    border-left:none; 
+   
+}
+.my-scroll .all-pagination div:active{
+     background: #EADCF1;
+}
+
+.my-scroll .iconfont.icon-kaitairen_icon_sel-.selected {
+     color: #8E729D;
+}
+

@@ -1,0 +1,23 @@
+.ant-message .ant-message-notice-content{
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+}
+
+.ant-message .ant-message-notice-content i{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.ant-alert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #F65757!important;
+    background: #F8EFFD!important;
+  }
+.ant-alert i{
+    color: #F65757 !important;
+}

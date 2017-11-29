@@ -1,0 +1,148 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+ul, li {
+  list-style: none; }
+
+textarea {
+  resize: none; }
+
+input, select, a, textarea {
+  outline: none;
+  font-family: "Microsoft YaHei"; }
+
+.cursor {
+  cursor: pointer; }
+
+.pr {
+  position: relative; }
+
+.pa {
+  position: absolute; }
+
+.fL {
+  float: left; }
+
+.fR {
+  float: right; }
+
+.f12 {
+  font-size: 12px; }
+
+.f14 {
+  font-size: 14px; }
+
+.f16 {
+  font-size: 16px; }
+
+.f18 {
+  font-size: 18px; }
+
+.f20 {
+  font-size: 20px; }
+
+.f24 {
+  font-size: 24px; }
+
+.whiteC {
+  color: #fff; }
+
+.blackC {
+  color: #383838; }
+
+.purpleC {
+  color: #8E729D; }
+
+.lightBlueC {
+  color: #9bb4c0; }
+
+.grayC {
+  color: #666666; }
+
+.lightGrayC {
+  color: #666666;
+  opacity: 0.6; }
+
+.freeC {
+  color: #448FE5; }
+
+.dirtyC {
+  color: #82669C; }
+
+.reserveC {
+  color: #FF8F01; }
+
+.maintainC {
+  color: #868C98; }
+
+.pauseC {
+  color: #019668; }
+
+.orderC {
+  color: #D2434D; }
+
+.on_orderC {
+  color: #323CAA; }
+
+.allBg {
+  background: #825F9F; }
+
+.freeBg {
+  background: #448FE5; }
+
+.dirtyBg {
+  background: #82669C; }
+
+.reserveBg {
+  background: #FF8F01; }
+
+.maintainBg {
+  background: #868C98; }
+
+.pauseBg {
+  background: #019668; }
+
+.orderBg {
+  background: #D2434D; }
+
+.on_orderBg {
+  background: #323CAA; }
+
+.mL5 {
+  margin-left: 5px; }
+
+.mL10 {
+  margin-left: 10px; }
+
+.mL20 {
+  margin-left: 20px; }
+
+.mR5 {
+  margin-right: 5px; }
+
+.mR10 {
+  margin-right: 10px; }
+
+.mR20 {
+  margin-right: 20px; }
+
+.mT5 {
+  margin-top: 5px; }
+
+.mT10 {
+  margin-top: 10px; }
+
+.mT20 {
+  margin-top: 20px; }
+
+.mB5 {
+  margin-bottom: 5px; }
+
+.mB10 {
+  margin-bottom: 10px; }
+
+.mB20 {
+  margin-bottom: 20px; }

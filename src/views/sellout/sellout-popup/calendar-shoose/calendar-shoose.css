@@ -1,0 +1,51 @@
+.estimate-left-calendar {
+  display: flex;
+  flex: 320px;
+  height: 38px;
+  line-height: 38px;
+}
+.estimate-left-calendar:after {
+  content: '';
+  flex: 1 1 150px;
+}
+.estimate-left-calendar .icon-left,
+.estimate-left-calendar .icon-right {
+  flex: 1 0 78px;
+}
+.estimate-left-calendar .icon-left .icon-home_title_arrow_left {
+  font-size: 16px;
+}
+
+.estimate-left-calendar .icon-left .previous-day {
+  font-size: 18px;
+  margin-left: 8px;
+}
+.estimate-left-calendar .calendar-input {
+  width: 120px;
+  height: 38px;
+  background: #f4ebfb;
+  border: 1px solid #cacaca;
+  border-radius: 4px;
+  outline: none;
+  font-size: 18px;
+  color: #8e729d;
+  text-align: center;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.estimate-left-calendar .icon-right .following-day {
+  font-size: 18px;
+}
+
+.estimate-left-calendar .icon-right .icon-home_title_arrow_right {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.estimate-left-calendar .active-i {
+  color: #8e729d;
+}
+
+.dis-none {
+  display: none;
+}

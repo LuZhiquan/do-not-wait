@@ -1,0 +1,21 @@
+.choose_select{padding-left: 300px;width:100%;height:60px;line-height:60px;background-color:#FFFFFF;font-size:0;box-shadow:0px 1px 0px 0px #D8D8D8}
+.choose_select select,.choose_select input{vertical-align:middle;box-sizing:border-box;height:38px;width:300px;border:1px solid #DCDCDC;border-radius:4px;margin-left:20px;font-size:18px;outline:none;padding-left:10px}
+.choose_select button{margin-left:20px;vertical-align:middle;background:#8E729D;border-radius:4px;width:134px;outline:none;border:0;cursor:pointer;height:38px;font-family:MicrosoftYaHei;font-size:18px;line-height:38px;color:#FFFFFF}
+.choose_content{height:473px;width:100%;padding: 0!important;overflow-y:auto;background:#EEEEEE}
+.choose_content-inner{padding:10px 20px}
+.choose_content .each_data{background-color:#FFFFFF;border:1px solid #D8D8D8;border-radius:4px;height:60px;line-height:60px;display:flex;flex-flow:row;margin-bottom:10px;font-size:16px;cursor:pointer}
+.choose_content .each_data .original_name{
+    flex:3;
+    padding-left:20px;
+    font-size:20px;text-align:left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.choose_content .each_data .original_number{flex:3}
+.choose_content .each_data .original_department{flex:4}
+.choose_content .each_data .original_post{flex:2}
+.choose_content .each_data .original_selected{flex:1}
+.choose_content .each_data span{text-align:center;font-family:MicrosoftYaHei}
+.choose_content .each_data span i{font-size:20px;color:#FFFFFF}
+.choose_content .click_selected{background:#8E729D;color:#FFFFFF;border:1px solid #8E729D}

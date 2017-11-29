@@ -1,0 +1,21 @@
+.ant-modal{padding-bottom:0}
+.ant-modal-header{opacity:0.74;background:#825F9F;padding:0;height:46px}
+.ant-modal-header .ant-modal-title{font-size:20px;color:#FFFFFF;line-height:46px;text-align:center}
+.ant-modal-body{padding:0}
+.ant-modal-close{color:#FFFFFF;font-size:20px}
+.ant-modal-footer{padding:0;display:flex}
+.ant-modal-footer button{flex: 1; height:45px;font-size:18px;}
+.ant-modal-footer button:first-child{border-bottom-left-radius:4px;}
+.ant-modal-footer button:last-child{border-bottom-right-radius:4px;}
+/*取消按钮*/
+.ant-modal-footer .no-cancel{color:#8E729D}
+/*其他按钮的颜色*/
+.ant-modal-footer .other-botton{background:#8E729D;color:#FFFFFF;border: 1px solid #70577D} 
+.ant-modal-footer .other-botton:hover{border: 1px solid #70577D} 
+.ant-modal-footer .other-botton:focus{border: 1px solid #70577D} 
+.ant-modal-footer button+button{margin-left:0}
+.ant-btn-lg{padding:0;border-radius:0}
+.ant-modal-close-x{width:20px;height:20px;font-size:20px;margin-right: 20px;}
+.ant-btn:hover,.ant-btn:focus{border-color:#fff}
+.ant-btn-primary:hover,.ant-btn-primary:focus{border-color:#8E729D}
+.ant-btn-primary{border-color:#8E729D}.ant-modal{top:0}

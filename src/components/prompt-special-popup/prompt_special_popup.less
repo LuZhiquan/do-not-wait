@@ -1,0 +1,104 @@
+.prompt-special-popup-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .not-order-product:last-child{
+        padding-right: 30px;
+    }
+    .not-order-product h1{
+        font-size: 20px;
+        color: #666666;
+        text-align: center;
+        margin-top:24px;
+    }
+    .stop-sale-product li,.out-of-stock li{
+        display: inline-block;
+        padding-right: 30px;
+        font-size: 14px;
+        color: #868686;
+        padding-top: 10px;
+    }
+    .table-title{
+        border-bottom:  1px solid #CACACA;
+        padding-top: 10px;
+        font-size: 14px;
+        color: #868686;
+    }
+    .dishes-name,.surplus-num,.ordered-num{
+        display: inline-block;
+        padding-top: 10px;
+
+    }
+    .table-title p{
+        display: inline-block;
+    }
+    .table-list p{
+        color: #999999;
+        font-size: 14px;
+    }
+    .dishes-name{
+        width: 50%;
+    }
+    .surplus-num{
+        width: 25%;
+        text-align: center;
+    }
+    .ordered-num{
+        width: 25%;
+        text-align: right;
+    }
+    .prompt{
+        height: 200px;
+        text-align: center;
+        .warning{
+            font-size: 16px;
+            color: #F65757;
+            margin-bottom: 20px;
+        }
+        .delele-text{
+            font-size: 24px;
+            color: #333333;
+            line-height: 163px;
+            span{
+                color: #F65757;
+            }
+        }
+        .my-delete-text{
+            font-size: 18px;
+            color: #8E729D;
+        }
+    }
+
+    .bottom-btn{
+			display: flex;
+			justify-content: space-between;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			.btn{
+				background: #FFFFFF;
+				border: 1px solid #8E729D;
+				font-size: 18px;
+				color: #8E729D;
+				height: 40px;
+				flex: 1;
+				cursor: pointer;
+				border: none;
+				border-right: 1px solid #785E85;
+			}
+			.btn:first-child{
+				border-radius: 0 0 0 4px;
+			}
+			.btn:last-child{
+				border-radius: 0 0 4px 0;
+			}
+			.selected{
+				background: #8E729D;
+				color: #fff;
+			}
+		}
+}
+
+

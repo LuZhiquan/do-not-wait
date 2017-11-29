@@ -1,0 +1,83 @@
+.take-order-popup-modal {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.take-order-popup-modal .ant-modal {
+	top:0
+}
+.take-order-popup-modal .ant-btn {
+	flex: 3!important;
+}
+.take-order-popup-modal .ant-btn.empty-btn {
+	flex: 2!important;
+	width: 220px;
+	padding: 0;
+	color: #666!important;
+}
+
+.take-order-popup-modal .order-container {
+	position: relative;
+	height: 474px;
+	margin: 20px;
+	background: #FFFFFF;
+	border: 1px solid #CACACA;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.take-order-popup-modal .order-tabs {
+	float: left;
+	width: 272px;
+	height: 100%;
+	background: #F5F5F5;
+	border-radius: 3px 0 0 3px;
+	border-right: 1px solid #CACACA;
+}
+.take-order-popup-modal .order-tabs-list li {
+	position: relative;
+	padding: 16px 70px 16px 16px;
+	line-height: 18px;
+	border-bottom: 1px solid #CACACA;
+	cursor: pointer;
+}
+.take-order-popup-modal .order-tabs-list li.selected {
+	background-color: #FFF;
+}
+.take-order-popup-modal .order-tabs-list .time {
+	margin-bottom: 8px;
+	font-size: 24px;
+	color: #666;
+	letter-spacing: 0;
+}
+.take-order-popup-modal .order-tabs-list .total-quantity,
+.take-order-popup-modal .order-tabs-list .total-price {
+	font-size: 18px;
+	color: #9B9B9B;
+	letter-spacing: 0;
+}
+.take-order-popup-modal .order-tabs-list .total-quantity {
+	float: left;
+}
+.take-order-popup-modal .order-tabs-list .total-price {
+	float: right;
+}
+.take-order-popup-modal .order-tabs-list .delete {
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 64px;
+	height: 43px;
+	line-height: 43px;
+	font-size: 18px;
+	text-align: center;
+	cursor: pointer;
+	border-left: 1px solid #CACACA;
+	transform: translateY(-50%);
+}
+
+.take-order-popup-modal .order-dishes {
+	float: right;
+	width: 586px;
+	height: 100%;
+}

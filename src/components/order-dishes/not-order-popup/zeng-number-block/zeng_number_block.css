@@ -1,0 +1,40 @@
+.zhuang-zeng-block{
+    width: 800px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.zhuang-zeng-block .zhuang-left .red{
+    font-size: 18px;
+    color: #F65757;
+    padding: 0 6px;
+}
+.zhuang-zeng-block .zhuang-left{
+    font-size: 18px;
+    color: #666;
+}
+.zhuang-zeng-block .number{
+    font-size: 20px;
+    color: #8E729D;
+    position: relative;
+}
+
+.zhuang-zeng-block .number i{
+   font-size: 24px;
+   color: #9B9B9B;
+   cursor: pointer;
+}
+.zhuang-zeng-block .number i:first-child{
+    margin-right: 20px;
+}
+.zhuang-zeng-block .number i:last-child{
+    margin-left: 20px;
+}
+
