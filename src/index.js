@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import 'whatwg-fetch';
-// import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 import Routes from './views/Routes';
 
@@ -17,5 +17,5 @@ render(
 	document.getElementById('root')
 );
 
-// registerServiceWorker();
+registerServiceWorker();
 
