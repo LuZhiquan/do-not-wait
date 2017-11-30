@@ -48,121 +48,127 @@ class AppStore {
     this.feedback = null;
     this.ifopenclass = true;
   }
-  
+
   //登录
   @action
   login = account => {
-    getJSON({
-      url: '/reception/login.action',
-      data: account,
-      success: function(json) {
-        if (json.code === 0) {
-          //如果账号是admin角色，并且没有配置权限或者权限不完整，则前端手动给配置所有权限
-          if (
-            json.data.roleName === 'admin' &&
-            (!json.data.permissionList || json.data.permissionList.length < 74)
-          ) {
-            json.data.permissionList = [
-              'TableOperation:Original',
-              'TableOperation:ChangeTable',
-              'TableOperation:AddTable',
-              'TableOperation:ModifyOrder',
-              'TableOperation:Joint',
-              'TableOperation:Sabotage',
-              'TableOperation:Clear',
-              'TableOperation:CancelTable',
-              'TableOperation:Repair',
-              'TableOperation:Recovery',
-              'Order:QueryOrder',
-              'Order:Reprint',
-              'ReservationModule:QueryReservation',
-              'ReservationModule:AddReservation',
-              'ReservationModule:ModifyReservation',
-              'ReservationModule:CancelReservation',
-              'DinnerParty:QueryDinnerParty',
-              'DinnerParty:DinnerPartyOpenTable',
-              'DinnerParty:AddDinnerParty',
-              'DinnerParty:ModifyDinnerParty',
-              'DinnerParty:CancelDinnerParty',
-              'DinnerParty:Deposit',
-              'DinnerParty:Discountonvegetables',
-              'DinnerParty:Adjustmentexpenses',
-              'TableManager:QueryTableManager',
-              'TableManager:AddManager',
-              'TableManager:Adjustservicecontent',
-              'TableManager:RemoveManager',
-              'MessageCenter:QueryMessage',
-              'MessageCenter:Handle',
-              'MessageCenter:Forward',
-              'OtherModule:Pricemaintenance',
-              'OtherModule:CancelStopSale',
-              'OtherModule:Reprintsmallticket',
-              'OtherModule:StopSale',
-              'UserPrivilege:Discount',
-              'SellClearModule:AddCount',
-              'SellClearModule:ReduceCount',
-              'SellClearModule:MakingNewspaperLoss',
-              'SellClearModule:GuQing',
-              'SellClearModule:Queryput',
-              'DiscountModule:PrivilegeFold',
-              'DiscountModule:FullSingleFold',
-              'DiscountModule:SingleProductDiscount',
-              'DiscountModule:FreeServiceCharge',
-              'DiscountModule:Reduction',
-              'DiscountModule:FreeSingle',
-              'DiscountModule:AdjustCommodityDiscount',
-              'DiscountModule:Membershipdiscount',
-              'OrderModule:PresenteDish',
-              'OrderModule:Retreatfood',
-              'OrderModule:ProvisionalChange',
-              'OrderModule:ModifyWeighing',
-              'OrderModule:Order',
-              'OrderModule:Turndish',
-              'OrderModule:Donation',
-              'OrderModule:Coupon',
-              'MemberModule:ChangePassword',
-              'MemberModule:ReSetPassword',
-              'MemberModule:Frozen',
-              'MemberModule:Cancellation',
-              'MemberModule:QueryMember',
-              'MemberModule:Addmembers',
-              'MemberModule:Thaw',
-              'MemberModule:Recharge',
-              'MemberModule:QueryRecharge',
-              'MemberModule:Reprint',
-              'MemberModule:SupplementaryInvoice',
-              'CheckoutModule:CancellationOfSuspense',
-              'CheckoutModule:lationOFSuspense',
-              'CheckoutModule:Checkout',
-              'CheckoutModule:Drawabill',
-              'CheckoutModule:offeracourse',
-              'CheckoutModule:Shift',
-              'CheckoutModule:Endofday'
-            ];
-          }
-
-          let account = json.data;
-          let path;
-          switch (account.businessPattern) {
-            case 1239: //快餐-点菜模式
-              path = '/dishes-cashier';
-              break;
-            case 1332: //快餐-自选模式
-              path = '/cashier';
-              break;
-            default:
-              //正餐
-              path = '/dine';
-          }
-          sessionStorage.setItem('account', JSON.stringify(account));
-          browserHistory.push(path);
-        } else {
-          message.destroy();
-          message.error(json.message);
-        }
+    // getJSON({
+    //   url: '/reception/login.action',
+    //   data: account,
+    //   success: function(json) {
+    const json = {
+      code: 0,
+      data: {
+        roleName: 'admin'
       }
-    });
-  };
+    }
+    if (json.code === 0) {
+      //如果账号是admin角色，并且没有配置权限或者权限不完整，则前端手动给配置所有权限
+      if (
+        json.data.roleName === 'admin' &&
+        (!json.data.permissionList || json.data.permissionList.length < 74)
+      ) {
+        json.data.permissionList = [
+          'TableOperation:Original',
+          'TableOperation:ChangeTable',
+          'TableOperation:AddTable',
+          'TableOperation:ModifyOrder',
+          'TableOperation:Joint',
+          'TableOperation:Sabotage',
+          'TableOperation:Clear',
+          'TableOperation:CancelTable',
+          'TableOperation:Repair',
+          'TableOperation:Recovery',
+          'Order:QueryOrder',
+          'Order:Reprint',
+          'ReservationModule:QueryReservation',
+          'ReservationModule:AddReservation',
+          'ReservationModule:ModifyReservation',
+          'ReservationModule:CancelReservation',
+          'DinnerParty:QueryDinnerParty',
+          'DinnerParty:DinnerPartyOpenTable',
+          'DinnerParty:AddDinnerParty',
+          'DinnerParty:ModifyDinnerParty',
+          'DinnerParty:CancelDinnerParty',
+          'DinnerParty:Deposit',
+          'DinnerParty:Discountonvegetables',
+          'DinnerParty:Adjustmentexpenses',
+          'TableManager:QueryTableManager',
+          'TableManager:AddManager',
+          'TableManager:Adjustservicecontent',
+          'TableManager:RemoveManager',
+          'MessageCenter:QueryMessage',
+          'MessageCenter:Handle',
+          'MessageCenter:Forward',
+          'OtherModule:Pricemaintenance',
+          'OtherModule:CancelStopSale',
+          'OtherModule:Reprintsmallticket',
+          'OtherModule:StopSale',
+          'UserPrivilege:Discount',
+          'SellClearModule:AddCount',
+          'SellClearModule:ReduceCount',
+          'SellClearModule:MakingNewspaperLoss',
+          'SellClearModule:GuQing',
+          'SellClearModule:Queryput',
+          'DiscountModule:PrivilegeFold',
+          'DiscountModule:FullSingleFold',
+          'DiscountModule:SingleProductDiscount',
+          'DiscountModule:FreeServiceCharge',
+          'DiscountModule:Reduction',
+          'DiscountModule:FreeSingle',
+          'DiscountModule:AdjustCommodityDiscount',
+          'DiscountModule:Membershipdiscount',
+          'OrderModule:PresenteDish',
+          'OrderModule:Retreatfood',
+          'OrderModule:ProvisionalChange',
+          'OrderModule:ModifyWeighing',
+          'OrderModule:Order',
+          'OrderModule:Turndish',
+          'OrderModule:Donation',
+          'OrderModule:Coupon',
+          'MemberModule:ChangePassword',
+          'MemberModule:ReSetPassword',
+          'MemberModule:Frozen',
+          'MemberModule:Cancellation',
+          'MemberModule:QueryMember',
+          'MemberModule:Addmembers',
+          'MemberModule:Thaw',
+          'MemberModule:Recharge',
+          'MemberModule:QueryRecharge',
+          'MemberModule:Reprint',
+          'MemberModule:SupplementaryInvoice',
+          'CheckoutModule:CancellationOfSuspense',
+          'CheckoutModule:lationOFSuspense',
+          'CheckoutModule:Checkout',
+          'CheckoutModule:Drawabill',
+          'CheckoutModule:offeracourse',
+          'CheckoutModule:Shift',
+          'CheckoutModule:Endofday'
+        ];
+      }
+
+      let account = json.data;
+      let path;
+      switch (account.businessPattern) {
+        case 1239: //快餐-点菜模式
+          path = '/dishes-cashier';
+          break;
+        case 1332: //快餐-自选模式
+          path = '/cashier';
+          break;
+        default:
+          //正餐
+          path = '/dine';
+      }
+      sessionStorage.setItem('account', JSON.stringify(account));
+      browserHistory.push(path);
+    } else {
+      message.destroy();
+      message.error(json.message);
+    }
+  }
+  //   });
+  // };
 
   //获取餐次信息
   @action
@@ -171,7 +177,7 @@ class AppStore {
     getJSON({
       url: '/reception/table/getMealName',
       data: { areaID: 0 },
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
           _this.mealName = json.data.mealName;
         }
@@ -183,10 +189,10 @@ class AppStore {
   @action
   logout = () => {
     sessionStorage.clear();
-    window.location.assign('/config');
+    window.location.assign('/');
     getJSON({
       url: '/reception/logout.action',
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
         }
       }
@@ -201,7 +207,7 @@ class AppStore {
     let _this = this;
     getJSON({
       url: '/reception/connect/checkBeforeDailyWorking',
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
           success && success();
         } else {
@@ -219,7 +225,7 @@ class AppStore {
     let _this = this;
     getJSON({
       url: '/reception/connect/isInWorking',
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
           success && success();
         } else {
@@ -240,7 +246,7 @@ class AppStore {
     getJSON({
       url: '/reception/message/getNewMessageList',
       data: { newTime: this.newTime || getNowTime() },
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
           let { messageList, newTime, count } = json.data;
           if (messageList && messageList.length) {
@@ -262,7 +268,7 @@ class AppStore {
     getJSON({
       url: '/reception/payment/validateProduct',
       data: { subOrderID },
-      success: function(json) {
+      success: function (json) {
         if (json.code === 0) {
           //没有未处理的菜品,成功通过
           success && success();
