@@ -109,14 +109,14 @@ class Main extends Component {
   }
 
   render() {
-    const appStore = this.props.appStore; 
+    const { appStore } = this.props;
     return (
       <div id="main" style={style}>
         {this.props.children}
         {this.state.statePopup}
         <MessageBox />
-        {this.props.appStore.showDayEnd}
-        {this.props.appStore.showOpenClass}
+        {appStore.showDayEnd}
+        {appStore.showOpenClass}
       </div>
     );
   }

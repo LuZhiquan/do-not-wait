@@ -185,7 +185,7 @@ class Handwriting {
 
   loadFromUrl(url) {
     var imageObj = new Image();
-    imageObj.onload = function() {
+    imageObj.onload = function () {
       this.canvas.cxt.clearRect(0, 0, this.width, this.height);
       this.canvas.cxt.drawImage(imageObj, 0, 0);
     };
@@ -209,7 +209,7 @@ class Handwriting {
 
     var _this = this;
     var xhr = new XMLHttpRequest();
-    xhr.addEventListener('readystatechange', function() {
+    xhr.addEventListener('readystatechange', function () {
       if (this.readyState === 4) {
         switch (this.status) {
           case 200:
@@ -224,7 +224,7 @@ class Handwriting {
               results = response[1][0][1];
             }
             if (!!_this.options.numOfWords) {
-              results = results.filter(function(result) {
+              results = results.filter(function (result) {
                 return result.length === _this.options.numOfWords;
               });
             }

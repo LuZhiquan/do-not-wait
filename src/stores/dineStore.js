@@ -131,10 +131,12 @@ getTableList = ({ areaID, searchKey }) => {
   //     status: 0
   //   },
   //   success: function(json) {
-  const data = Array(100).fill(0).map((item, index) => {
+  const status = [606, 607, 609, 610, 652, 728, 827];
+  const data = Array(121).fill(0).map((item, index) => {
+    const random = Math.floor(Math.random()*7);
     return {
       orderID: index,
-      tableStatus: 607,
+      tableStatus: status[random],
       tableName: '桌台' + (index+1),
       tableID: 'table' + index,
       subOrderID: null,

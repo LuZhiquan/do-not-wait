@@ -13,7 +13,7 @@ import TableWindow from './TableWindow';
 import Prompt from 'components/prompt-common';
 import Scrollbars from 'react-custom-scrollbars';
 import SelectMealPopup from './select-meal-popup';
-import keyboard from 'components/keyboard';
+import keyboard from 'react-handwriting-keyboard';
 import { getStrSize } from 'common/utils';
 
 import 'assets/styles/index/ting_item.css';
@@ -556,7 +556,7 @@ class Dine extends Component {
                         <Table
                           dineStore={dineStore}
                           table={table}
-                          key={index}
+                          key={table.tableID}
                         />
                       ) : (
                         <div key={index} className="item-basic" />

@@ -59,7 +59,8 @@ class AppStore {
     const json = {
       code: 0,
       data: {
-        roleName: 'admin'
+        roleName: 'admin',
+        userName: 'William Cui'
       }
     }
     if (json.code === 0) {
